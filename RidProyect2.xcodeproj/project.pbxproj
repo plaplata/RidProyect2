@@ -26,6 +26,13 @@
 		9D64C67C27BDB0D500DD4F1D /* logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D64C67B27BDB0D500DD4F1D /* logo1.jpg */; };
 		9D64C67E27BDB26000DD4F1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64C67D27BDB26000DD4F1D /* Extensions.swift */; };
 		9D64C68027C3516700DD4F1D /* rid-letters.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D64C67F27C3516700DD4F1D /* rid-letters.jpg */; };
+		FA5EE32C27CDDF220045DCC8 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE32B27CDDF220045DCC8 /* MessageKit */; };
+		FA5EE33027CDDF820045DCC8 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE32F27CDDF820045DCC8 /* JGProgressHUD */; };
+		FA5EE33427CDDFE80045DCC8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE33327CDDFE80045DCC8 /* Realm */; };
+		FA5EE33627CDDFE80045DCC8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE33527CDDFE80045DCC8 /* RealmSwift */; };
+		FA5EE33A27CDE06E0045DCC8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE33927CDE06E0045DCC8 /* SDWebImage */; };
+		FA5EE33C27CDE06E0045DCC8 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA5EE33B27CDE06E0045DCC8 /* SDWebImageMapKit */; };
+		FA5EE33F27CDEAA00045DCC8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EE33E27CDEAA00045DCC8 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,7 @@
 		9D64C67B27BDB0D500DD4F1D /* logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo1.jpg; sourceTree = "<group>"; };
 		9D64C67D27BDB26000DD4F1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9D64C67F27C3516700DD4F1D /* rid-letters.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rid-letters.jpg"; sourceTree = "<group>"; };
+		FA5EE33E27CDEAA00045DCC8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5EE33627CDDFE80045DCC8 /* RealmSwift in Frameworks */,
+				FA5EE33027CDDF820045DCC8 /* JGProgressHUD in Frameworks */,
+				FA5EE32C27CDDF220045DCC8 /* MessageKit in Frameworks */,
+				FA5EE33A27CDE06E0045DCC8 /* SDWebImage in Frameworks */,
 				9D4C379A27C371A800178891 /* FirebaseDatabase in Frameworks */,
 				9D4C379827C371A800178891 /* FirebaseAuth in Frameworks */,
+				FA5EE33C27CDE06E0045DCC8 /* SDWebImageMapKit in Frameworks */,
+				FA5EE33427CDDFE80045DCC8 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +116,7 @@
 				9D64C67327BDA75A00DD4F1D /* VideoPlayerViewController.swift */,
 				9D64C67527BDA77700DD4F1D /* NewConversationViewController.swift */,
 				9D64C67727BDA78E00DD4F1D /* ProfileViewController.swift */,
+				FA5EE33E27CDEAA00045DCC8 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +202,12 @@
 			packageProductDependencies = (
 				9D4C379727C371A800178891 /* FirebaseAuth */,
 				9D4C379927C371A800178891 /* FirebaseDatabase */,
+				FA5EE32B27CDDF220045DCC8 /* MessageKit */,
+				FA5EE32F27CDDF820045DCC8 /* JGProgressHUD */,
+				FA5EE33327CDDFE80045DCC8 /* Realm */,
+				FA5EE33527CDDFE80045DCC8 /* RealmSwift */,
+				FA5EE33927CDE06E0045DCC8 /* SDWebImage */,
+				FA5EE33B27CDE06E0045DCC8 /* SDWebImageMapKit */,
 			);
 			productName = RidProyect2;
 			productReference = 9D64C65027BDA48000DD4F1D /* RidProyect2.app */;
@@ -218,6 +239,10 @@
 			mainGroup = 9D64C64727BDA48000DD4F1D;
 			packageReferences = (
 				9D4C379627C371A800178891 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FA5EE32A27CDDF210045DCC8 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				FA5EE32E27CDDF820045DCC8 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				FA5EE33227CDDFE80045DCC8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				FA5EE33827CDE06D0045DCC8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 9D64C65127BDA48000DD4F1D /* Products */;
 			projectDirPath = "";
@@ -259,6 +284,7 @@
 				9D64C65427BDA48000DD4F1D /* AppDelegate.swift in Sources */,
 				9D64C67827BDA78E00DD4F1D /* ProfileViewController.swift in Sources */,
 				9D64C65627BDA48000DD4F1D /* SceneDelegate.swift in Sources */,
+				FA5EE33F27CDEAA00045DCC8 /* ChatViewController.swift in Sources */,
 				9D64C67227BDA74F00DD4F1D /* PhotoViewerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +443,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,6 +473,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +519,38 @@
 				kind = branch;
 			};
 		};
+		FA5EE32A27CDDF210045DCC8 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.0;
+			};
+		};
+		FA5EE32E27CDDF820045DCC8 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		FA5EE33227CDDFE80045DCC8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+		FA5EE33827CDE06D0045DCC8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -503,6 +563,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9D4C379627C371A800178891 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		FA5EE32B27CDDF220045DCC8 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE32A27CDDF210045DCC8 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		FA5EE32F27CDDF820045DCC8 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE32E27CDDF820045DCC8 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		FA5EE33327CDDFE80045DCC8 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE33227CDDFE80045DCC8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		FA5EE33527CDDFE80045DCC8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE33227CDDFE80045DCC8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		FA5EE33927CDE06E0045DCC8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE33827CDE06D0045DCC8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		FA5EE33B27CDE06E0045DCC8 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5EE33827CDE06D0045DCC8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
